@@ -11,7 +11,7 @@ hisi3519，face minisize:60,image size:640x480,time:4.1s,there is no any optimiz
 ##### then,compile the cpp:
 ##### arm-hisiv500-linux-g++ -Wno-psabi -I /home/june/arm/opencv-3.4.3/output/include/opencv/  -I /home/june/arm/opencv-3.4.3/output/include/opencv2/ -I /home/june/arm/opencv-3.4.3/output/include/ -L /home/june/arm/opencv-3.4.3/output/lib -lopencv_core -lopencv_dnn -lopencv_objdetect -lopencv_imgcodecs -lopencv_imgproc -lpthread -lrt -std=c++11 -o fast-mtcnn fast-mtcnn.cpp `pkg-config --cflags --libs opencv`
 
-##### or you can run directly excutable file after copy some library files into /lib(not only the opencv library):
+##### or you can run directly excutable file after copy some library files into /lib   (not only the opencv library):
 ./fast-mtcnn
 
 ## Anthor
